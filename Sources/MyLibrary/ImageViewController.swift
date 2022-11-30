@@ -10,7 +10,7 @@ import UIKit
 public extension UIViewController{
        
     static func getStoryboardVC() -> UIViewController {
-           let storyboard = UIStoryboard(name: "ImageVC", bundle: Bundle.module) // Use Bundle.module
+           let storyboard = UIStoryboard(name: "SampleImg", bundle: Bundle.module) // Use Bundle.module
            return storyboard.instantiateInitialViewController()!
        }
 }
