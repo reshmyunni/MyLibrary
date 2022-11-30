@@ -9,14 +9,13 @@ import UIKit
 
 public extension UIViewController{
        
-       public static func getStoryboardVC() -> UIViewController {
-           let storyboard = UIStoryboard(name: String(describing: self), bundle: Bundle.module) // Use Bundle.module
+    static func getStoryboardVC() -> UIViewController {
+           let storyboard = UIStoryboard(name: "ImageVC", bundle: Bundle.module) // Use Bundle.module
            return storyboard.instantiateInitialViewController()!
        }
 }
 public class ImageViewController: UIViewController {
 
-    public static let storyboardVC = UIStoryboard(name: "ImageLib", bundle: Bundle.module).instantiateInitialViewController()!
     public override func viewDidLoad() {
     }
     
