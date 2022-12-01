@@ -17,12 +17,14 @@ public extension UIViewController{
 
 public class ImageViewController: UIViewController {
 
-    @IBAction func apiCallBtnTapped(_ sender: Any) {
-        self.imgView.image = APIRequest.sharedInstance.apiCall()
-    }
+   
     @IBOutlet weak var imgView: UIImageView!
    
     public override func viewDidLoad() {
+    }
+    
+    @IBAction func apiCallBtnTapped(_ sender: Any) {
+        self.imgView.image = APIRequest.sharedInstance.apiCall()
     }
     
 

@@ -30,7 +30,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="API Call"/>
                                 <connections>
-                                    <action selector="apiCallBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="km6-HD-pZc"/>
+                                    <action selector="apiCallBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oIc-w4-ea5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,7 +42,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imgView" destination="6CY-G3-eY6" id="UkY-Sh-SGF"/>
+                        <outlet property="imgView" destination="6CY-G3-eY6" id="Rmf-Dp-J72"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
