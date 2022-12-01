@@ -11,6 +11,7 @@ import UIKit
 public class APIRequest:NSObject{
     
     static let sharedInstance = APIRequest()
+    
     func apiCall()->UIImage{
         var image:UIImage?
         let api:NSURL = URL(string: "https://bit.ly/2LMtByx")! as NSURL
@@ -23,7 +24,6 @@ public class APIRequest:NSObject{
             } else if let error = error {
                 print("HTTP Request Failed \(error)")
             }
-            
         }
         
         task.resume()

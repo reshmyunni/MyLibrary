@@ -42,7 +42,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imgView" destination="6CY-G3-eY6" id="3Vb-3N-gRy"/>
+                        <outlet property="imgView" destination="6CY-G3-eY6" id="UkY-Sh-SGF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
