@@ -24,10 +24,20 @@ public class ImageViewController: UIViewController {
     }
     
     @IBAction func apiCallBtnTapped(_ sender: Any) {
-        self.imgView.image = APIRequest.sharedInstance.apiCall()
+        APIRequest.sharedInstance.apiCall(request:"", parameters:[:], success: onAPISuccess, failure: onAPIFailed)
     }
     
+    func onAPISuccess(response:[String: Any]?)
+    {
+        print("response:",response as Any)
+        
+    }
 
+    
+    func onAPIFailed(message: String)
+    {
+    }
+    
     /*
     // MARK: - Navigation
 
