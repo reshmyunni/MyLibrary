@@ -27,9 +27,10 @@ public class ImageViewController: UIViewController {
         APIRequest.sharedInstance.apiCall(request:"", parameters:[:], success: onAPISuccess, failure: onAPIFailed)
     }
     
-    func onAPISuccess(response:[String: Any]?)
+    func onAPISuccess(response:Data?)
     {
         print("response:",response as Any)
+        self.imgView.image = UIImage(data: response!)
         
     }
 

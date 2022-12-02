@@ -12,7 +12,7 @@ public class APIRequest:NSObject{
     
     static let sharedInstance = APIRequest()
     
-    func apiCall(request: String, parameters: [String: String], success: @escaping ([String: Any]?) -> Void, failure: @escaping (String) -> Void){
+    func apiCall(request: String, parameters: [String: String], success: @escaping (Data?) -> Void, failure: @escaping (String) -> Void){
         let url = URL(string: "https://bit.ly/2LMtByx"+request)
         print("url:",url as Any)
         guard let requestUrl = url else { fatalError() }
@@ -58,6 +58,7 @@ public class APIRequest:NSObject{
             // serialise the data / NSData object into Dictionary [String : Any]
             guard let json = (try? JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers)) as? [String: Any] else {
                 print("Not containing JSON")
+                DispatchQueue.main.async{success(data)}
                 return
             }
             
