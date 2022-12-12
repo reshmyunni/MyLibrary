@@ -85,7 +85,7 @@
         <!--Navigation Controller-->
         <scene sceneID="wby-dl-bVH">
             <objects>
-                <navigationController storyboardIdentifier="ImageVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ut7-kR-Il7" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ImageVC" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ut7-kR-Il7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zfe-Ep-6P1">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
